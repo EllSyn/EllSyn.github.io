@@ -1,0 +1,33 @@
+body {
+  height: 100vh;
+  background-color: blanchedalmond;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'header'
+    'main';
+}
+
+#container {
+  display: flex;
+  height: auto;
+  width: 90%;
+  grid-area: main;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  margin: 20px 100px;
+  width: 70%;
+  height: 200px;
+  background-color: darkmagenta;
+  border-radius: 10px;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

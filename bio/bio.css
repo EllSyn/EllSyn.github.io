@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+  background-color: blanchedalmond;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'header'
+    'main';
+}
+
+#container {
+  display: grid;
+  height: auto;
+  width: 80%;
+  margin: 5% 10%;
+  grid-area: main;
+  gap: 10%;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: auto;
+  grid-template-areas:
+    'picture bio'
+    'picture contact';
+  justify-content: center;
+}
+
+#contact-info {
+  grid-area: contact;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#photo-container {
+  grid-area: picture;
+}
+
+#photo {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+}
