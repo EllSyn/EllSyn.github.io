@@ -46,3 +46,20 @@ body {
   width: 100%;
   height: auto;
 }
+
+a {
+  font-weight: bold;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: grey;
+}
